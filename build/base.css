@@ -420,6 +420,11 @@ ol ol ol {
 dd {
   margin-left: 0; }
 
+.section {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 10px; }
+
 .container {
   width: 980px;
   margin-right: auto;
@@ -434,9 +439,29 @@ dd {
   padding-right: 10px;
   padding-left: 10px; }
 
+table {
+  border-collapse: collapse;
+  width: 100%;
+  text-align: left; }
+  table thead {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #e5e5e5;
+    border: 1px #cccccc solid; }
+    table thead tr {
+      border-top-left-radius: 3px;
+      border-top-right-radius: 3px; }
+  table tr {
+    border: 1px #cccccc solid; }
+    table tr:nth-child(even) {
+      background-color: whitesmoke; }
+    table tr th, table tr td {
+      padding-top: 10px;
+      padding-bottom: 10px; }
+
 .header {
-  background-color: #eeeeee;
-  border-bottom: 1px #333333 solid;
+  background-color: whitesmoke;
+  border-bottom: 1px #e5e5e5 solid;
   padding-top: 10px;
   padding-bottom: 10px;
   margin-bottom: 10px; }

@@ -1,0 +1,30 @@
+table {
+  border-collapse: collapse;
+  width: 100%;
+  text-align: left;
+
+  thead {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: $gray-medium;
+    border: 1px darken($gray-medium, 10%) solid;
+    
+    tr {
+      border-top-left-radius: 3px;
+      border-top-right-radius: 3px;
+    }
+  }
+
+  tr {
+    border: 1px darken($gray-medium, 10%) solid;
+
+    &:nth-child(even) {
+      background-color: $gray-light;
+    }
+
+    th, td {
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+  }
+}
