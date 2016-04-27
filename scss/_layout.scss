@@ -1,0 +1,17 @@
+// Fixed-width centered column
+.container {
+  width: $container-width;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.columns {
+  margin-right: -$grid-gutter;
+  margin-left: -$grid-gutter;
+}
+
+.column {
+  float: left;
+  padding-right: $grid-gutter;
+  padding-left: $grid-gutter;
+}
