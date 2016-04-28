@@ -1,0 +1,20 @@
+/* Form groups are styled with description lists - <dl>, <dt>, <dd>
+   labels are in <dt>, inputs are in <dd>*/
+
+.form-group {
+
+  dl {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+
+    dt {
+      padding: 6px 3px 0px 3px;
+      font-weight: 300;
+    }
+
+    dd {
+      padding: 0px 3px 6px 3px;
+    }
+  }
+}

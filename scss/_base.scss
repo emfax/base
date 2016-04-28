@@ -1,0 +1,20 @@
+body {
+  font: #{$body-font-size}/1.4 $body-font;
+  font-weight: 300;
+  color: $gray-dark;
+  background-color: $bg-white;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+// Colours
+// Backgrounds
+.bg-alert {
+  background-color: $flash-bg-red;
+
+  &:hover {
+    background-color: darken($flash-bg-red, 5%)
+  }
+}

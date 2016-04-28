@@ -1,30 +1,45 @@
+/* Tables are implemented in <div> elements.
+   Controversial, but easier to style.
+*/
+
+// Variables
+$border-radius: 3px;
+
+// Table dress ups
+.table-wrap {
+  border: 1px $gray-medium solid;
+  border-radius: $border-radius;
+}
+
+
+// Table stuff
 table {
   border-collapse: collapse;
   width: 100%;
   text-align: left;
 
   thead {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    background-color: $gray-medium;
-    border: 1px darken($gray-medium, 10%) solid;
-    
-    tr {
-      border-top-left-radius: 3px;
-      border-top-right-radius: 3px;
-    }
+    background-color: $gray-light;
+    border-bottom: 1px $gray-medium solid;
   }
 
   tr {
-    border: 1px darken($gray-medium, 10%) solid;
+    border-bottom: 1px $gray-medium solid;
 
-    &:nth-child(even) {
+    &:last-child {
+      border-bottom: none;
+    }
+
+    &:hover {
       background-color: $gray-light;
     }
+  }
 
-    th, td {
-      padding-top: 10px;
-      padding-bottom: 10px;
-    }
+  td, th {
+    padding: 6px 3px;
+  }
+
+  th {
+    font-weight: 400;
   }
 }

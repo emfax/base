@@ -365,6 +365,20 @@ textarea {
   font: inherit;
   /* 2 */ }
 
+body {
+  font: 12px/1.4 "Roboto", Helvetica, arial, sans-serif;
+  font-weight: 300;
+  color: #333333;
+  background-color: white; }
+
+div {
+  box-sizing: border-box; }
+
+.bg-alert {
+  background-color: #fcdede; }
+  .bg-alert:hover {
+    background-color: #fac7c7; }
+
 h1,
 h2,
 h3,
@@ -392,10 +406,6 @@ h5 {
 
 h6 {
   font-size: 11px; }
-
-body {
-  font-family: "Roboto", Helvetica, arial, sans-serif;
-  font-weight: 100; }
 
 p {
   margin-top: 0;
@@ -439,25 +449,49 @@ dd {
   padding-right: 10px;
   padding-left: 10px; }
 
+/* Form groups are styled with description lists - <dl>, <dt>, <dd>
+   labels are in <dt>, inputs are in <dd>*/
+.form-group dl {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto; }
+  .form-group dl dt {
+    padding: 6px 3px 0px 3px;
+    font-weight: 300; }
+  .form-group dl dd {
+    padding: 0px 3px 6px 3px; }
+
+input {
+  display: block;
+  width: 100%; }
+
+input[type="text"] {
+  border-radius: 3px; }
+
+/* Tables are implemented in <div> elements.
+   Controversial, but easier to style.
+*/
+.table-wrap {
+  border: 1px #e5e5e5 solid;
+  border-radius: 3px; }
+
 table {
   border-collapse: collapse;
   width: 100%;
   text-align: left; }
   table thead {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    background-color: #e5e5e5;
-    border: 1px #cccccc solid; }
-    table thead tr {
-      border-top-left-radius: 3px;
-      border-top-right-radius: 3px; }
+    background-color: whitesmoke;
+    border-bottom: 1px #e5e5e5 solid; }
   table tr {
-    border: 1px #cccccc solid; }
-    table tr:nth-child(even) {
+    border-bottom: 1px #e5e5e5 solid; }
+    table tr:last-child {
+      border-bottom: none; }
+    table tr:hover {
       background-color: whitesmoke; }
-    table tr th, table tr td {
-      padding-top: 10px;
-      padding-bottom: 10px; }
+  table td, table th {
+    padding: 6px 3px; }
+  table th {
+    font-weight: 400; }
 
 .header {
   background-color: whitesmoke;
