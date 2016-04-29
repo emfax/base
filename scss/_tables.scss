@@ -1,5 +1,13 @@
-/* Tables are implemented in <div> elements.
-   Controversial, but easier to style.
+/*
+
+Wrap tables in .table-wrap.  Might look something like this:
+
+<div class="container table-wrap">
+  <table>
+    Normal table stuff
+  </table>
+</div>
+
 */
 
 // Variables
