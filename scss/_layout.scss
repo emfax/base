@@ -10,15 +10,34 @@
   width: $container-width;
   margin-right: auto;
   margin-left: auto;
+
+  &>.columns {
+    margin-left: -$grid-gutter;
+    margin-right: -$grid-gutter;
+    font-size: 0; // Bloody stupid inline block failure.  Reset in .column
+  }
 }
 
 .columns {
-  margin-right: -$grid-gutter;
-  margin-left: -$grid-gutter;
+  font-size: 0; // Bloody stupid inline block failure.  Reset in .column
 }
 
 .column {
-  float: left;
+  font-size: $body-font-size;
+  display: inline-block;
   padding-right: $grid-gutter;
   padding-left: $grid-gutter;
+}
+
+// Columns widths for .column elements
+.one-half {
+  width: 50%;
+}
+
+.one-third {
+  width: 33%;
+}
+
+.two-thirds {
+  width: 66%;
 }

@@ -1,8 +1,21 @@
+/*
+
+Markup for tabnavs should look like the following:
+
+<div class="tabnav">
+  <div class="tabnav-tabs">
+    <a class="tabnav-tab">Value</a>
+  </div>
+</div>
+
+if the tab is selected, then add .selected class
+
+a class="tabnav-tab selected">Value</a>
+
+*/
+
 // Container for tabnavs
 .tabnav {
-  margin-top: 0;
-  margin-bottom: 15px;
-  border-bottom: 1px solid #ddd;
 
   .counter {
     margin-left: 5px;
@@ -10,6 +23,7 @@
 }
 
 .tabnav-tabs {
+  margin-top: 10px;
   margin-bottom: -1px;
 }
 
@@ -22,13 +36,12 @@
   text-decoration: none;
   background-color: transparent;
   border: 1px solid transparent;
-  border-bottom: 0;
+  border-radius: 3px 3px 0 0;
 
   &.selected {
     color: $text-gray-dark;
     background-color: $bg-white;
-    border-color: #ddd;
-    border-radius: 3px 3px 0 0;
+    border-color: $gray-medium $gray-medium $white;
   }
 
   &:hover,

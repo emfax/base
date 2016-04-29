@@ -366,7 +366,7 @@ textarea {
   /* 2 */ }
 
 body {
-  font: 12px/1.4 "Roboto", Helvetica, arial, sans-serif;
+  font: 12px "Roboto", Helvetica, arial, sans-serif;
   font-weight: 300;
   color: #333333;
   background-color: white; }
@@ -385,6 +385,7 @@ h3,
 h4,
 h5,
 h6 {
+  font-weight: 300;
   margin-top: 0;
   margin-bottom: 0;
   line-height: 1.5; }
@@ -439,34 +440,121 @@ dd {
   width: 980px;
   margin-right: auto;
   margin-left: auto; }
+  .container > .columns {
+    margin-left: -10px;
+    margin-right: -10px;
+    font-size: 0; }
 
 .columns {
-  margin-right: -10px;
-  margin-left: -10px; }
+  font-size: 0; }
 
 .column {
-  float: left;
+  font-size: 12px;
+  display: inline-block;
   padding-right: 10px;
   padding-left: 10px; }
 
+.one-half {
+  width: 50%; }
+
+.one-third {
+  width: 33%; }
+
+.two-thirds {
+  width: 66%; }
+
+/*
+
+Markup for tabnavs should look like the following:
+
+<div class="tabnav">
+  <div class="tabnav-tabs">
+    <a class="tabnav-tab">Value</a>
+  </div>
+</div>
+
+if the tab is selected, then add .selected class
+
+a class="tabnav-tab selected">Value</a>
+
+*/
+.tabnav .counter {
+  margin-left: 5px; }
+
+.tabnav-tabs {
+  margin-top: 10px;
+  margin-bottom: -1px; }
+
+.tabnav-tab {
+  display: inline-block;
+  padding: 8px 12px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #666;
+  text-decoration: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: 3px 3px 0 0; }
+  .tabnav-tab.selected {
+    color: #333333;
+    background-color: white;
+    border-color: #e5e5e5 #e5e5e5 white; }
+  .tabnav-tab:hover, .tabnav-tab:focus {
+    text-decoration: none; }
+
 /* Form groups are styled with description lists - <dl>, <dt>, <dd>
    labels are in <dt>, inputs are in <dd>*/
-.form-group dl {
-  width: 60%;
-  margin-left: auto;
-  margin-right: auto; }
-  .form-group dl dt {
-    padding: 6px 3px 0px 3px;
-    font-weight: 300; }
-  .form-group dl dd {
-    padding: 0px 3px 6px 3px; }
+.form-group dt {
+  padding: 6px 3px 0px 3px;
+  color: #333333;
+  font-weight: 400; }
+.form-group dd {
+  padding: 0px 3px 6px 3px; }
 
 input {
   display: block;
   width: 100%; }
 
-input[type="text"] {
-  border-radius: 3px; }
+input[type="text"], input[type="password"] {
+  padding: 6px 3px;
+  font-size: 13px;
+  color: #333333;
+  vertical-align: middle;
+  background-color: white;
+  background-repeat: no-repeat;
+  border: 1px solid #dddddd;
+  border-radius: 3px;
+  outline: none;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.075); }
+
+/*
+
+Boxes
+
+Boxes are for grouping content.  Box groups need headings.  If you don't have
+a heading, make one up.
+
+Markup:
+
+<div class="boxed-group">
+  <h3>Heading</h3>
+  <div>Content</div>
+</div>
+
+*/
+.boxed-group > h3 {
+  background-color: whitesmoke;
+  border: 1px #e5e5e5 solid;
+  border-bottom: 0;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 6px 3px; }
+.boxed-group .box {
+  border: 1px #e5e5e5 solid;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px; }
 
 /* Tables are implemented in <div> elements.
    Controversial, but easier to style.
@@ -497,5 +585,4 @@ table {
   background-color: whitesmoke;
   border-bottom: 1px #e5e5e5 solid;
   padding-top: 10px;
-  padding-bottom: 10px;
   margin-bottom: 10px; }

@@ -1,0 +1,35 @@
+/*
+
+Boxes
+
+Boxes are for grouping content.  Box groups need headings.  If you don't have
+a heading, make one up.
+
+Markup:
+
+<div class="boxed-group">
+  <h3>Heading</h3>
+  <div>Content</div>
+</div>
+
+*/
+
+.boxed-group {
+
+  &>h3 {
+    background-color: $gray-light;
+    border: 1px $gray-medium solid;
+    border-bottom: 0;
+    border-top-left-radius: $border-radius;
+    border-top-right-radius: $border-radius;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 6px 3px;
+  }
+
+  .box {
+    border: 1px $gray-medium solid;
+    border-bottom-left-radius: $border-radius;
+    border-bottom-right-radius: $border-radius;
+  }
+}

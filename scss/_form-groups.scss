@@ -3,18 +3,13 @@
 
 .form-group {
 
-  dl {
-    width: 60%;
-    margin-left: auto;
-    margin-right: auto;
+  dt {
+    padding: 6px 3px 0px 3px;
+    color:$text-gray-dark;
+    font-weight: 400;
+  }
 
-    dt {
-      padding: 6px 3px 0px 3px;
-      font-weight: 300;
-    }
-
-    dd {
-      padding: 0px 3px 6px 3px;
-    }
+  dd {
+    padding: 0px 3px 6px 3px;
   }
 }
