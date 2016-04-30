@@ -1,5 +1,17 @@
-/* Form groups are styled with description lists - <dl>, <dt>, <dd>
-   labels are in <dt>, inputs are in <dd>*/
+/*
+
+Form groups are styled with description lists - <dl>, <dt>, <dd>
+labels are in <dt>, inputs are in <dd>
+
+<dl class="form-group">
+  <dt>Label</dt>
+  <dd><form element></dd>
+</dl>
+
+Only one from element per <dl> unless there's supposed to be than one.  Radio
+buttons and the like.
+
+*/
 
 .form-group {
 
