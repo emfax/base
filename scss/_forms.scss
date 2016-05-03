@@ -1,9 +1,9 @@
 input {
   display: inline-block;
-  width: 100%;
 }
 
 input[type="text"], input[type="password"] {
+  width: 100%;
   padding: 6px 3px;
   font-size: 13px;
   color: $text-gray-dark;

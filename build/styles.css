@@ -531,10 +531,10 @@ buttons and the like.
   padding: 0px 3px 6px 3px; }
 
 input {
-  display: inline-block;
-  width: 100%; }
+  display: inline-block; }
 
 input[type="text"], input[type="password"] {
+  width: 100%;
   padding: 6px 3px;
   font-size: 13px;
   color: #333333;
@@ -582,7 +582,7 @@ Markup:
 
 <div class="boxed-group">
   <h3>Heading</h3>
-  <div>Content</div>
+  <div class="box">Content</div>
 </div>
 
 */
@@ -638,3 +638,6 @@ table {
   border-bottom: 1px #e5e5e5 solid;
   padding-top: 10px;
   margin-bottom: 10px; }
+
+.collapsed {
+  display: none; }
