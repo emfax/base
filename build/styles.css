@@ -440,12 +440,10 @@ dd {
   width: 980px;
   margin-right: auto;
   margin-left: auto; }
-  .container > .columns {
-    margin-left: -10px;
-    margin-right: -10px;
-    font-size: 0; }
 
 .columns {
+  margin-left: -10px;
+  margin-right: -10px;
   font-size: 0; }
 
 .column {
@@ -546,6 +544,13 @@ input[type="text"], input[type="password"] {
   outline: none;
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.075); }
 
+input[type="radio"] {
+  margin-right: 10px; }
+
+.form-buttons {
+  margin-top: 6px;
+  margin-bottom: 6px; }
+
 .button {
   position: relative;
   display: inline-block;
@@ -594,11 +599,13 @@ Markup:
   border-top-right-radius: 3px;
   font-size: 14px;
   font-weight: 400;
-  padding: 6px 3px; }
+  padding: 10px 10px; }
 .boxed-group .box {
   border: 1px #e5e5e5 solid;
   border-bottom-left-radius: 3px;
-  border-bottom-right-radius: 3px; }
+  border-bottom-right-radius: 3px;
+  padding-left: 10px;
+  padding-right: 10px; }
 
 /*
 

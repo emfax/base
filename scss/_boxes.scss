@@ -24,12 +24,14 @@ Markup:
     border-top-right-radius: $border-radius;
     font-size: 14px;
     font-weight: 400;
-    padding: 6px 3px;
+    padding: $grid-gutter $grid-gutter;
   }
 
   .box {
     border: 1px $gray-medium solid;
     border-bottom-left-radius: $border-radius;
     border-bottom-right-radius: $border-radius;
+    padding-left: $grid-gutter;
+    padding-right: $grid-gutter;
   }
 }

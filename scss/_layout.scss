@@ -10,15 +10,11 @@
   width: $container-width;
   margin-right: auto;
   margin-left: auto;
-
-  &>.columns {
-    margin-left: -$grid-gutter;
-    margin-right: -$grid-gutter;
-    font-size: 0; // Bloody stupid inline block failure.  Reset in .column
-  }
 }
 
 .columns {
+  margin-left: -$grid-gutter;
+  margin-right: -$grid-gutter;
   font-size: 0; // Bloody stupid inline block failure.  Reset in .column
 }
 
