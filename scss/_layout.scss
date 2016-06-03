@@ -12,6 +12,11 @@
   margin-left: auto;
 }
 
+.container.document {
+  width: 100%;
+  margin: 0;
+}
+
 .columns {
   margin-left: -$grid-gutter;
   margin-right: -$grid-gutter;
@@ -23,26 +28,47 @@
   display: inline-block;
   padding-right: $grid-gutter;
   padding-left: $grid-gutter;
+  vertical-align: top;
 }
 
 // Columns widths for .column elements
-.one-half {
+.c1-2 {
   width: 50%;
 }
 
-.one-third {
+.c1-3 {
   width: 33%;
 }
 
-.two-thirds {
+.c2-3 {
   width: 66%;
+}
+
+.c1-4 {
+  width: 25%;
+}
+
+.c3-4 {
+  width: 75%;
+}
+
+.c2-12 {
+  width: 16.66%;
+}
+
+.c5-12 {
+  width: 41.66%;
+}
+
+.c7-12 {
+  width: 58.33%;
 }
 
 // Floats
 .left {
-  margin-right: auto;
+  float: left;
 }
 
 .right {
-  margin-left: auto;
+  float: right;
 }

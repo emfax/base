@@ -365,14 +365,14 @@ textarea {
   font: inherit;
   /* 2 */ }
 
+* {
+  box-sizing: border-box; }
+
 body {
   font: 12px "Roboto", Helvetica, arial, sans-serif;
   font-weight: 300;
   color: #333333;
   background-color: white; }
-
-div {
-  box-sizing: border-box; }
 
 .bg-alert {
   background-color: #fcdede; }
@@ -441,6 +441,10 @@ dd {
   margin-right: auto;
   margin-left: auto; }
 
+.container.document {
+  width: 100%;
+  margin: 0; }
+
 .columns {
   margin-left: -10px;
   margin-right: -10px;
@@ -450,22 +454,38 @@ dd {
   font-size: 12px;
   display: inline-block;
   padding-right: 10px;
-  padding-left: 10px; }
+  padding-left: 10px;
+  vertical-align: top; }
 
-.one-half {
+.c1-2 {
   width: 50%; }
 
-.one-third {
+.c1-3 {
   width: 33%; }
 
-.two-thirds {
+.c2-3 {
   width: 66%; }
 
+.c1-4 {
+  width: 25%; }
+
+.c3-4 {
+  width: 75%; }
+
+.c2-12 {
+  width: 16.66%; }
+
+.c5-12 {
+  width: 41.66%; }
+
+.c7-12 {
+  width: 58.33%; }
+
 .left {
-  margin-right: auto; }
+  float: left; }
 
 .right {
-  margin-left: auto; }
+  float: right; }
 
 /*
 
@@ -536,6 +556,7 @@ input[type="text"], input[type="password"] {
   padding: 6px 3px;
   font-size: 13px;
   color: #333333;
+  min-height: 34px;
   vertical-align: middle;
   background-color: white;
   background-repeat: no-repeat;
@@ -546,6 +567,8 @@ input[type="text"], input[type="password"] {
 
 input[type="radio"] {
   margin-right: 10px; }
+  input[type="radio"] .inline {
+    display: inline-block; }
 
 .form-buttons {
   margin-top: 6px;
@@ -567,7 +590,8 @@ input[type="radio"] {
   background-image: linear-gradient(#fcfcfc, #eeeeee);
   border: 1px solid #d5d5d5;
   border-radius: 3px;
-  -webkit-appearance: none; }
+  -webkit-appearance: none;
+  text-decoration: none; }
 
 .button-primary {
   color: white;
@@ -648,3 +672,26 @@ table {
 
 .collapsed {
   display: none; }
+
+.document h1 {
+  line-height: 1; }
+
+.number {
+  text-align: right; }
+
+.line-items {
+  padding-top: 10px;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black; }
+
+.column.line-items {
+  padding: 0; }
+
+.line-item {
+  font-size: 10px; }
+
+.line-item-title {
+  font-weight: 400; }
+
+p.line-item-title {
+  margin: 0; }

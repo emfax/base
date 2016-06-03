@@ -1,0 +1,29 @@
+.document {
+  h1 {
+    line-height: 1;
+  }
+}
+
+
+.number {
+  text-align: right;
+}
+
+
+.line-items {
+  padding-top: 10px;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.line-item {
+  font-size: $small-font-size;
+}
+
+.line-item-title {
+  font-weight: 400;
+}
+
+p.line-item-title {
+  margin: 0;
+}
